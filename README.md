@@ -3,4 +3,5 @@ In this project, a large and widely available ECG dataset, [2017 PhysioNet](http
 With regards to feature extraction stage, we extracted 199 features based on this [repository](https://github.com/victorkifer/ecg-af-detection-physionet-2017/tree/master/features) from Viktor Kifer, although we modified some of them based on our needs.
 
 As the sampling rate of recorded signals by our device (130 Hz) was different from that of train set (300 Hz), we conduct upsampling on our signals in order to extract features from test set (our signals) just like train set (2017 PhysioNet signals). If, in contrast, we did not carry out upsampling on our signals, features extracted from test set would not become compatible with classifiers which had been trained based on features extracted from 2017 PhysioNet dataset. 
+
 This classification is one application of our device. There are other functions and purposes that our device can fulfil which its website is under developing and you can explore our organization github via this [link](https://github.com/Hekidesk). 
